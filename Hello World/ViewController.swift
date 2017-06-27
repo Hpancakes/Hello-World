@@ -12,16 +12,16 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var titleLbl: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     var tapCount = 0
     
     @IBAction func btnPressed(_ sender: Any) {
-        titleLbl.text = "I Like Chiken"
-        tapCount = tapCount + 1
-        print(tapCount)
+      print(text1.text!)
+      print(text2.text!)
         
-        if tapCount == 10 {
-            titleLbl.text = "Goddammmit!!!! Stop pressing the botton !!!!!"
-        }
     }
     
     @IBAction func ChikenBtnPressed(_ sender: Any) {
