@@ -22,6 +22,8 @@ class ViewController: UIViewController {
       print(text1.text!)
       print(text2.text!)
         
+        titleLbl.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
+        
     }
     
     @IBAction func ChikenBtnPressed(_ sender: Any) {
