@@ -14,6 +14,8 @@
 		BEFE83231F02922F0077CDED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE83211F02922F0077CDED /* LaunchScreen.storyboard */; };
 		BEFE832E1F02922F0077CDED /* Hello_WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFE832D1F02922F0077CDED /* Hello_WorldTests.swift */; };
 		BEFE83391F02922F0077CDED /* Hello_WorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFE83381F02922F0077CDED /* Hello_WorldUITests.swift */; };
+		BEFE83481F0366B30077CDED /* Group 2 x2.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFE83461F0366B30077CDED /* Group 2 x2.png */; };
+		BEFE83491F0366B30077CDED /* Group 2.png in Resources */ = {isa = PBXBuildFile; fileRef = BEFE83471F0366B30077CDED /* Group 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		BEFE83341F02922F0077CDED /* Hello WorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hello WorldUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFE83381F02922F0077CDED /* Hello_WorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello_WorldUITests.swift; sourceTree = "<group>"; };
 		BEFE833A1F02922F0077CDED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFE83461F0366B30077CDED /* Group 2 x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 2 x2.png"; sourceTree = "<group>"; };
+		BEFE83471F0366B30077CDED /* Group 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				BEFE831F1F02922F0077CDED /* Assets.xcassets */,
 				BEFE83211F02922F0077CDED /* LaunchScreen.storyboard */,
 				BEFE83241F02922F0077CDED /* Info.plist */,
+				BEFE83461F0366B30077CDED /* Group 2 x2.png */,
+				BEFE83471F0366B30077CDED /* Group 2.png */,
 			);
 			path = "Hello World";
 			sourceTree = "<group>";
@@ -237,7 +243,9 @@
 			files = (
 				BEFE83231F02922F0077CDED /* LaunchScreen.storyboard in Resources */,
 				BEFE83201F02922F0077CDED /* Assets.xcassets in Resources */,
+				BEFE83481F0366B30077CDED /* Group 2 x2.png in Resources */,
 				BEFE831E1F02922F0077CDED /* Main.storyboard in Resources */,
+				BEFE83491F0366B30077CDED /* Group 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +522,7 @@
 				BEFE833F1F02922F0077CDED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEFE83401F02922F0077CDED /* Build configuration list for PBXNativeTarget "Hello WorldTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				BEFE83421F02922F0077CDED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEFE83431F02922F0077CDED /* Build configuration list for PBXNativeTarget "Hello WorldUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				BEFE83451F02922F0077CDED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

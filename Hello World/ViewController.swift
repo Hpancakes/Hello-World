@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     @IBAction func btnPressed(_ sender: Any) {
         
-        let addition = false
+        let addition = true
         
         if addition {
             titleLbl.text = "\(Double(text1.text!)! + Double(text2.text!)!)"

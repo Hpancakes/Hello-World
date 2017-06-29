@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro8-Iy-g6l">
-                                <rect key="frame" x="70" y="68" width="180" height="21"/>
+                                <rect key="frame" x="70" y="106" width="180" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="4o4-71-PcI"/>
                                     <constraint firstAttribute="height" constant="21" id="5FW-fn-Hjp"/>
@@ -32,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkV-zV-3t7">
-                                <rect key="frame" x="93.5" y="112" width="134" height="30"/>
+                                <rect key="frame" x="93" y="150" width="134" height="30"/>
                                 <state key="normal" title="Hola, Soy un boton "/>
                                 <connections>
                                     <action selector="btnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xrf-ge-4FZ"/>
@@ -46,7 +47,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dqg-6E-6OZ">
-                                <rect key="frame" x="110" y="150" width="100" height="30"/>
+                                <rect key="frame" x="109" y="188" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Y4x-E2-OHo"/>
                                 </constraints>
@@ -55,7 +56,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ch8-Dh-Iae">
-                                <rect key="frame" x="110.5" y="188" width="100" height="30"/>
+                                <rect key="frame" x="110" y="226" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="u1o-5B-gt4"/>
                                 </constraints>
@@ -63,10 +64,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="VTf-LT-zxr">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="jsC-5z-tr7"/>
+                                </constraints>
+                                <color key="barTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ro8-Iy-g6l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="3nw-J4-hMi"/>
+                            <constraint firstItem="Ro8-Iy-g6l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="86" id="3nw-J4-hMi"/>
+                            <constraint firstItem="VTf-LT-zxr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="6zF-SF-K6K"/>
+                            <constraint firstAttribute="trailing" secondItem="VTf-LT-zxr" secondAttribute="trailing" id="Lp3-zf-DJR"/>
+                            <constraint firstItem="VTf-LT-zxr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OWz-ZX-ERH"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OhF-AU-3wY" secondAttribute="bottom" constant="37" id="QTN-Ek-ayC"/>
                             <constraint firstItem="OhF-AU-3wY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xg8-aE-fSl"/>
                             <constraint firstItem="OkV-zV-3t7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fGf-Az-FeM"/>
@@ -74,7 +86,7 @@
                             <constraint firstItem="OkV-zV-3t7" firstAttribute="top" secondItem="Ro8-Iy-g6l" secondAttribute="bottom" constant="23" id="fzL-6w-r3g"/>
                             <constraint firstItem="Ch8-Dh-Iae" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hG9-g8-lOY"/>
                             <constraint firstItem="Dqg-6E-6OZ" firstAttribute="top" secondItem="OkV-zV-3t7" secondAttribute="bottom" constant="8" id="kgh-YN-QFs"/>
-                            <constraint firstItem="Dqg-6E-6OZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n6M-LD-FDe"/>
+                            <constraint firstItem="Dqg-6E-6OZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="n6M-LD-FDe"/>
                             <constraint firstItem="Ro8-Iy-g6l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oVL-88-Qne"/>
                         </constraints>
                     </view>
