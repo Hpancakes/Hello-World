@@ -10,25 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var titleLbl: UILabel!
-    
-    @IBOutlet weak var text1: UITextField!
-    
-    @IBOutlet weak var text2: UITextField!
-    
-    var tapCount = 0
-    
-    @IBAction func btnPressed(_ sender: Any) {
-        
-        let addition = true
-        
-        if addition {
-            titleLbl.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
-        } else {
-            titleLbl.text = "\(Double(text1.text!)! - Double(text2.text!)!)"
-        }
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
